@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Carcoster</title>
+    <link rel="stylesheet" href="/resources/style.css"/>
 </head>
 <body>
 
