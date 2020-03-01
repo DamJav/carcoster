@@ -21,10 +21,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         this.dataSource = dataSource;
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder(){
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
-    }
+//    @Bean
+//    public PasswordEncoder passwordEncoder(){
+//        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+//    }
 
 //    @Override
 //    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -37,29 +37,29 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 //    }
 
 
-    @Override
-    public void configure(WebSecurity web) throws Exception {
-        web.ignoring()
-                .antMatchers("/media/**")
-                .antMatchers("/h2-console", "/h2-console/**");
-    }
+//    @Override
+//    public void configure(WebSecurity web) throws Exception {
+//        web.ignoring()
+//                .antMatchers("/media/**")
+//                .antMatchers("/h2-console", "/h2-console/**");
+//   }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                // .antMatchers("/user", "/user/*", "/user/**")
-                    .antMatchers("/**").permitAll()
-                .and()
-            .formLogin()
-                .loginPage("/login")
-                .usernameParameter("username")
-                .passwordParameter("password")
-                .defaultSuccessUrl("/")
-                .and()
-            .logout()
-                .logoutUrl("/logout")
-                .logoutSuccessUrl("/")
-                .and()
-            .csrf();
+                    .antMatchers("/**").permitAll();
+//                .and()
+//            .formLogin()
+//                .loginPage("/login")
+//                .usernameParameter("username")
+//                .passwordParameter("password")
+//                .defaultSuccessUrl("/")
+//                .and()
+//            .logout()
+//                .logoutUrl("/logout")
+//                .logoutSuccessUrl("/")
+//                .and()
+//            .csrf();
     }
 }
