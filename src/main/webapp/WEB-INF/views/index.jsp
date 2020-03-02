@@ -12,6 +12,6 @@
     <link rel="stylesheet" href="/resources/style.css"/>
 </head>
 <body>
-
+<header></header>
 </body>
 </html>
