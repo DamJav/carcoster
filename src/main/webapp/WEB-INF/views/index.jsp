@@ -13,5 +13,6 @@
 </head>
 <body>
 <header><h1>Carcoster</h1></header>
+<footer></footer>
 </body>
 </html>
