@@ -12,6 +12,6 @@
     <link rel="stylesheet" href="/resources/style.css"/>
 </head>
 <body>
-<header></header>
+<header><h1>Carcoster</h1></header>
 </body>
 </html>
