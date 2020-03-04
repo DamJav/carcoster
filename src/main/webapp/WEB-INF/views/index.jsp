@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="/resources/style.css"/>
 </head>
 <body>
-<header><h1>Carcoster</h1></header>
+<header><h1 style="text-align: center;">Carcoster</h1>
+<button class="login">Zaloguj</button>
+<button class="register">Zarejestruj</button>
+</header>
 <footer>Autor - Damian Garbacz</footer>
 </body>
 </html>
