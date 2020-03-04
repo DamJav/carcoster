@@ -4,12 +4,13 @@ body{
 
 footer{
     text-align: center;
+    clear:both;
 }
 
 .title{
     text-align: center;
-    float: left;
 }
 .login, .register{
     float: right;
 }
+
