@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/resources/style.css"/>
 </head>
 <body>
-<header><h1 class="title"">Carcoster</h1>
+<header><h1 class="title">Carcoster</h1>
 <button class="login">Zaloguj</button>
 <button class="register">Zarejestruj</button>
 </header>
