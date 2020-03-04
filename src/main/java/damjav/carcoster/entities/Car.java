@@ -5,10 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "cars")
@@ -22,7 +19,10 @@ public class Car {
     private String brand;
     private String model;
     private Integer year;
-    private Integer milage;
+    private Integer mileage;
+    @ManyToOne
+    private User user;
+
 
 
 }
